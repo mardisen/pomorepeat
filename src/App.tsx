@@ -1,8 +1,16 @@
-import type { Component } from 'solid-js';
+import { Component, createSignal, onMount } from 'solid-js';
+
+import { Switch } from './components/Switch';
+import { useDarkMode } from './utils/useDarkMode';
 
 const App: Component = () => {
-  return (
-    <p class="text-4xl text-primary-700 text-center py-20">Hello tailwind!</p>
+  const { isDark, setDark } = useDarkMode();
+
+  return (<div class='dark:bg-zinc-800 bg-zinc-200 h-screen'>
+    <p class='text-4xl text-primary-700 text-center py-20'>Hello tailwind!</p>
+    <Switch checked={isDark()} callback={setDark}></Switch>
+  </div>
+
   );
 };
 
