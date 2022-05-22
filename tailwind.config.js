@@ -1,4 +1,4 @@
-const colors = require('tailwindcss/colors')
+const colors = require('tailwindcss/colors');
 
 module.exports = {
   content: [
@@ -7,10 +7,11 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
-    extend: {},
-    colors: {
-      primary: colors.green
-    }
+    extend: {
+      colors: {
+        primary: colors.green
+      }
+    },
   },
   plugins: [],
 };
