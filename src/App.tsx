@@ -8,7 +8,7 @@ const App: Component = () => {
 
   return (<div class='dark:bg-zinc-800 bg-zinc-200 h-screen'>
     <p class='text-4xl text-primary-700 text-center py-20'>Hello tailwind!</p>
-    <Switch checked={isDark()} callback={setDark}></Switch>
+    <Switch checked={isDark()} callback={setDark} text='Toggle dark mode'></Switch>
   </div>
 
   );
