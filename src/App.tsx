@@ -1,4 +1,4 @@
-import { Component, createSignal, onMount } from 'solid-js';
+import { Component } from 'solid-js';
 
 import { Switch } from './components/Switch';
 import { useDarkMode } from './utils/useDarkMode';
