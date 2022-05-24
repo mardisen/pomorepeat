@@ -14,11 +14,11 @@ export const Switch: Component<Props> = (props: Props) => {
   return <div class='flex flex-row items-center gap-3'>
     <label class='relative inline-block h-5 w-9 '>
       <div
-        class='bg-white rounded-full h-5 w-9 flex flex-row items-center cursor-pointer absolute'
+        class='bg-white rounded-full h-5 w-9 flex flex-row items-center cursor-pointer absolute transition-colors'
         classList={{ ['bg-primary-700']: props.checked }}
       >
         <div
-          class='bg-zinc-200 rounded-full h-4 w-4 m-1'
+          class='bg-zinc-200 rounded-full h-4 w-4 m-1 transition-all'
           classList={{ ['translate-x-3']: props.checked }}></div>
       </div>
       <input
