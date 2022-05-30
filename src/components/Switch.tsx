@@ -1,10 +1,10 @@
 import type { Component, JSX } from 'solid-js';
 
-interface Props {
-  callback?(checked: boolean): void,
-  checked: boolean,
+type Props = {
+  callback?(checked: boolean): void;
+  checked: boolean;
   text?: string;
-}
+};
 
 export const Switch: Component<Props> = (props: Props) => {
   const onChange: JSX.EventHandler<HTMLInputElement, InputEvent> = (e) => {
