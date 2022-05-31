@@ -7,8 +7,9 @@ import { createDarkMode } from './utils/createDarkMode';
 const App: Component = () => {
   const { isDark, setDark } = createDarkMode();
 
-  return (<div class='dark:bg-zinc-800 bg-zinc-200 h-screen transition-colors flex flex-col items-center'>
-    <Timer interval={1}></Timer>
+  return (<div class='dark:bg-dblack bg-dwhite h-screen transition-colors flex flex-col items-center'>
+    <Timer interval={0}></Timer>
+    <input type="text" class='rounded bg-dblack dark:bg-dwhite active:border-r-primary-600 my-4 w-8'/>
     <Switch checked={isDark()} callback={setDark} text='Toggle dark mode'></Switch>
   </div>
 
