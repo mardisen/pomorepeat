@@ -1,13 +1,13 @@
 import { Component } from 'solid-js';
-
 import { Switch } from './components/Switch';
-import { useDarkMode } from './utils/useDarkMode';
+import { Timer } from './components/Timer';
+import { createDarkMode } from './utils/createDarkMode';
 
 const App: Component = () => {
-  const { isDark, setDark } = useDarkMode();
+  const { isDark, setDark } = createDarkMode();
 
-  return (<div class='dark:bg-zinc-800 bg-zinc-200 h-screen transition-colors'>
-    <p class='text-4xl text-primary-700 text-center py-20'>Hello tailwind!</p>
+  return (<div class='dark:bg-dblack bg-dwhite h-screen transition-colors flex flex-col items-center'>
+    <Timer interval={30}></Timer>
     <Switch checked={isDark()} callback={setDark} text='Toggle dark mode'></Switch>
   </div>
 
