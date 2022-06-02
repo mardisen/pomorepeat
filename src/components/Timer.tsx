@@ -1,7 +1,6 @@
-import { createDate, createDateNow, createTimeDifferenceFromNow } from '@solid-primitives/date';
-import moment from 'moment';
-import { Component, createEffect, createSignal } from 'solid-js';
+import { Component } from 'solid-js';
 import { createPercentageTimer } from '../utils/createPercentageTimer';
+import { Input } from './Input';
 
 type Props = {
   interval: number;
@@ -19,5 +18,6 @@ export const Timer: Component<Props> = (props: Props) => {
     <div class='text-primary-600 text-center'>
       {diffString()}
     </div>
+    <Input />
   </>;
 };
