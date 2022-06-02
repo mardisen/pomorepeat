@@ -10,7 +10,7 @@ type DarkModeStore = {
     dark: string;
 };
 
-export const useDarkMode = (): DarkModeData => {
+export const createDarkMode = (): DarkModeData => {
     const [store, setStore] = createCookieStore<DarkModeStore>();
     const userMedia = window.matchMedia('(prefers-color-scheme: dark)');
 

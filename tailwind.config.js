@@ -1,5 +1,7 @@
 const colors = require('tailwindcss/colors');
 
+const primary = colors.cyan;
+const neutral = colors.zinc;
 module.exports = {
   content: [
     './index.html',
@@ -9,7 +11,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: colors.cyan
+        primary,
+        neutral,
+        dblack: neutral["800"],
+        dwhite: neutral["200"],
       }
     },
   },
