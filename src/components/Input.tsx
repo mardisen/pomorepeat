@@ -12,5 +12,5 @@ export const Input: Component<InputProps> = (props: InputProps) =>
     onClick={props.onClick}
     onKeyPress={props.onKeyPress}
     onChange={props.onChange}
-    class='bg-transparent text-primary-600 outline-none focus:border-b-primary-700 border-b-2 my-4 w-10 px-2 py-1 transition-colors' />
+    class='bg-transparent text-primary-600 outline-none focus:border-b-primary-700 dark:border-b-dwhite border-b-dblack border-b-2 my-4 w-10 px-2 py-1 transition-colors' />
 );
